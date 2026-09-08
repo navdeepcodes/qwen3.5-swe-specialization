@@ -1,0 +1,28 @@
+# Base model checkpoint (5.6GB, downloaded separately — see README for source)
+model/
+
+# Python virtual environment
+venv/
+
+# Raw downloaded source datasets (1.4GB, reproducible via pipeline/build_dataset.py)
+pipeline/raw/
+
+# Smoke-test leftovers (superseded by data_curated/ and calibration/)
+adapters/
+data/
+
+# Calibration run artifacts (throwaway adapters from memory/speed calibration)
+calibration/calib_adapters/
+calibration/train.jsonl
+calibration/valid.jsonl
+
+# Real training outputs (will be created after approval — not yet run)
+runs/
+checkpoints/
+logs/
+
+# OS / editor cruft
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "train": 13806,
+    "valid": 600,
+    "eval": 600,
+    "by_source_total": {
+      "opencodeinstruct": 4500,
+      "codefeedback": 3000,
+      "commitpackft": 3000,
+      "security_dpo": 4506
+    }
+  },
+  "token_stats_sampled": {
+    "n_sampled": 150,
+    "mean": 417.9,
+    "median": 391.0,
+    "p95": 792,
+    "max": 1414
+  },
+  "estimated_total_train_tokens": 5769067,
+  "leakage_check": "PASSED - zero hash overlap eval vs train/valid",
+  "dedup_method": "exact sha256 hash + MinHash(32 perm)/LSH(8 band) near-dup, jaccard>=0.85"
+}

@@ -1,0 +1,23 @@
+{
+    "model": "/Users/navdeepcn/soup-qwen35-test/model",
+    "train": true,
+    "fine_tune_type": "lora",
+    "data": "/Users/navdeepcn/soup-qwen35-test/calibration",
+    "seed": 0,
+    "num_layers": 4,
+    "batch_size": 1,
+    "iters": 20,
+    "val_batches": 5,
+    "learning_rate": 1e-4,
+    "steps_per_report": 5,
+    "steps_per_eval": 1000,
+    "adapter_path": "./calib_adapters",
+    "save_every": 1000,
+    "max_seq_length": 768,
+    "grad_checkpoint": true,
+    "lora_parameters": {
+        "rank": 16,
+        "dropout": 0.0,
+        "scale": 20.0
+    }
+}
